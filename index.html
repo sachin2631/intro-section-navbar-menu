@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Concert+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Jersey+25&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lugrasimo&family=Macondo&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&family=Yatra+One&family=Young+Serif&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      /* font-family: Epilogue; */
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .row {
+      height: 50px;
+      /*   border: 1px solid black; */
+      display: flex;
+    }
+    .login a{
+      color: hsl(0, 0%, 41%);
+    }
+
+    .col1 {
+      justify-content: center;
+      display: flex;
+      padding: 10px;
+      align-items: centers;
+      overflow: hidden;
+      width: 15%;
+      /* border: 1px solid red; */
+    }
+
+    .col1 img {
+      width: auto;
+      object-fit: cover;
+    }
+
+    .col2 {
+      /* padding-left: 0; */
+      display: flex;
+      align-items: center;
+      width: 60%;
+      /* border: 1px solid green; */
+    }
+
+    .col3 {
+      align-items: center;
+      display: flex;
+      width: 25%;
+      justify-content: flex-end;
+      /* border: 1px solid yellow; */
+    }
+
+    ul {
+      /* margin-left: -40px ; */
+      display: flex;
+      list-style-type: none;
+    }
+
+    ul li {
+      margin-right: 30px;
+    }
+
+    .login {
+      margin-right: 20px;
+    }
+
+    .login a {
+      font-family: Epilogue;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .reg {
+      margin-right: 30px;
+      font-weight: 500;
+    }
+    .reg button{
+      border: 2px solid hsl(0, 0%, 41%);
+      font-weight: 500;
+    }
+
+    .navbar {
+      margin-top: 10px;
+    }
+
+    .row2 {
+      display: flex;
+    }
+
+    .cola3 {
+      padding: 120px 0 100px 150px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* border: 1px solid black; */
+    }
+
+    .cola3>h1 {
+      font-size: 68px;
+      font-family: Epilogue;
+      font-weight: 700;
+      color: hsl(0, 0%, 8%);
+    }
+    p{
+      font-weight: 500;
+    }
+
+    .cola3>p {
+      margin-top: 40px;
+      margin-right: 120px;
+      margin-left: 40px;
+      text-align: justify;
+      font-size: 18px;
+      line-height: 25px;
+      /* letter-spacing: 2px; */
+    }
+
+    .cola3>button {
+      justify-content: left;
+    }
+
+    .col4 {
+      
+      width: 50%;
+    }
+    .img{
+      /* border: 1px solid green; */
+      overflow: hidden;
+      /* height: 80%; */
+      width: 100%;
+      padding:60px 100px 100px 100px;
+    }
+    .img img{
+      width: 80%;
+      object-fit: cover;
+    }
+
+    .btn {
+      font-weight: 500;
+      display: flex;
+      width: 100%;
+      justify-content: left;
+      margin-top: 40px;
+    }
+    .btn button:hover{
+      font-size: 18px;
+      background-color: transparent;
+      color: hsl(0, 0%, 8%);
+      border: 2px solid hsl(0, 0%, 8%);
+    }
+
+    .btn>button {
+      font-size: 18px;
+      padding: 15px 25px;
+      margin-left: 40px;
+      border-radius: 15px;
+      border: none;
+      background-color: hsl(0, 0%, 8%);
+      color: hsl(0, 0%, 98%);
+      font-weight: 500;
+    }
+
+    /* p {
+      font-weight: 500;
+    } */
+    .logos{
+      display: flex;
+      align-items: center;
+      margin-top: 80px;
+      margin-left: 40px;
+      /* margin-left */
+      /* justify-content: center; */
+    }
+    .logos>img{
+      margin-right: 40px;
+    }
+    button{
+      padding: 10px 20px;
+      background-color: transparent;
+      border-radius: 10px;
+      border: 1px solid hsl(0, 0%, 41%);
+      color: hsl(0, 0%, 41%);
+      font-family: Epilogue;
+    }
+    /* .listm{
+      color: hsl(0, 0%, 41%);
+      font-family: Epilogue;
+    } */
+    /* drdn */
+    #menu,
+        #menu ul {
+          font-weight: 500;
+            list-style: none;
+            /* border: 1px solid #000; */
+            /* background-color: #ecffec; */
+            /* padding: 0 0 26px 0; */
+            font-size: 18px;
+            /* margin: 0; */
+        }
+
+        #menu li {
+            float: left;
+            margin-right: 3px;
+            /* border: 1px solid ; */
+            position: relative;
+        }
+        .reg button:hover{
+          color: hsl(0, 0%, 8%);
+          font-weight: 500;
+          border: 2px solid hsl(0, 0%, 8%);
+        }
+        .login a:hover{
+          color: hsl(0, 0%, 8%);
+        }
+
+        #menu ul {
+            margin-top: 10px;
+            position: absolute;
+            top: 25px;
+            font-weight: 500;
+            left: -1px;
+            width: 180px;
+            background: hsl(0, 0%, 98%);
+            border-radius: 12px;
+            box-shadow: 1px 1px 5px hsl(0, 0%, 41%);
+            padding: 20px;
+            display: none;
+        }
+
+        #menu ul li {
+            float: none;
+            margin: 0;
+            padding: 0;
+            line-height: 15px;
+        }
+
+        #menu a:link,
+        #menu a:visited {
+            display: block;
+            font-family: Epilogue;
+            /* font-size: 0.75em; */
+            /* font-weight: bold; */
+            text-align: left;
+            /* vertical-align: middle; */
+            text-decoration: none;
+            color: hsl(0, 0%, 41%);
+            padding: 5px;
+        }
+
+        #menu li:hover ul {
+            display: block;
+        }
+
+        #menu a:hover {
+            color: hsl(0, 0%, 8%);
+            ;
+        }
+        .imgsrc{
+          margin-right: 10px;
+        }
+    /*  */
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <section>
+      <div class="navbar">
+        <div class="row">
+          <div class="col1">
+            <img src="logo.svg" alt="" srcset="">
+          </div>
+          <div class="col2">
+            <ul id="menu">
+              <li><a href="#">Features<img style="margin-left: 5px; width: 15px;" src="images/icon-arrow-down.svg"></a>
+                  <ul>
+                      <li><a href="#"><img class="imgsrc" src="images/icon-todo.svg" alt="">
+                        Todo List</a></li>
+                      <li><a href="#"><img class="imgsrc" src="images/icon-calendar.svg" alt="">
+                        Calendar</a></li>
+                      <li><a href="#"><img class="imgsrc" src="images/icon-reminders.svg" alt="">
+                        Reminders</a></li>
+                      <li><a href="#"><img class="imgsrc" src="images/icon-planning.svg" alt="">
+                        Planning</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">Company<img style="margin-left: 5px; width: 15px;" src="images/icon-arrow-down.svg"></a>
+                  <ul>
+                      <li><a href="#">History</a></li>
+                      <li><a href="#">Our Team</a></li>
+                      <li><a href="#">Blog</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">About</a></li>
+          </ul>
+      
+          </div>
+          <div class="col3">
+            <div class="login">
+              <a href="#">Login</a>
+            </div>
+            <div class="reg">
+              <a href="#">
+                <button>Register</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container2">
+        <div class="row2">
+          <div class="cola3">
+            <h1>Make <br>remote work</h1>
+            <p>Get your team in sync, no matter your location. Streamline processes,
+              create team rituals, and watch productivity soar.</p>
+            <div class="btn"><button>Learn more</button></div>
+            <div class="logos">
+              <img src="images/client-databiz.svg" alt="">
+              <img src="images/client-audiophile.svg" alt="">
+              <img src="images/client-meet.svg" alt="">
+              <img src="images/client-maker.svg" alt="">
+            </div>
+          </div>
+          <div class="col4">
+            <div class="img">
+              <img src="images/image-hero-desktop.png" alt="" srcset="">
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> displays site properly based on user's device
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  Feel free to remove these styles or customise in your own stylesheet 👍
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  Features
+  Company
+  Careers
+  About
+
+  Login
+  Register
+
+ 
+
+  Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.
+
+  Learn more
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html> -->
